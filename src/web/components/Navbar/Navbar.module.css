@@ -1,0 +1,57 @@
+/* This targets the logo box */
+.logo {
+  margin-left: 36px;
+  transition: all 0.3s ease;
+}
+
+.links {
+  gap: 36px;
+  transition: all 0.3s ease;
+}
+
+.container {
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+
+/* Media Query for screens smaller than 1040px */
+@media only screen and (max-width: 1040px) {
+
+  /* Debug style */
+  .logo {
+    margin-left: 0px;
+    max-width: 176px;
+  }
+
+  .links {
+    gap: 24px;
+    font-size: 14px;
+  }
+
+  /* .container {
+    max-height: 56px;
+  } */
+
+}
+
+
+
+/* Media Query for screens smaller than 896px */
+@media only screen and (max-width: 896px) {
+
+  .links {
+    display: none !important;
+  }
+
+  /* Hide auth buttons */
+  .authbtn {
+    display: none !important;
+  }
+
+  /* Show hamburger icon */
+  .hamburgerIcon {
+    display: flex !important;
+    cursor: pointer;
+  }
+}
