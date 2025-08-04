@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Flex, Box } from "@chakra-ui/react";
-import DashboardNavbar from "./DashboardNavbar";
+import DashboardNavbar from "./DashBoardNavBar";
 import DashBoardSideBar from "./DashboardSidebar";
 import LessonDetails from "../All-Courses-Or-Chapters/LessonDetails";
 import UserCourseDetails from "./UserCourseDetails";
