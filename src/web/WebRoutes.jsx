@@ -22,7 +22,7 @@ import styles from "./WebRoutes.module.css";
 
 import SampleSVG from "./components/sample/SampleSVG";
 import CategorySelectionPage from "./components/SelectCategory/CategorySelectionPage";
-import SelectClasses from "./components/SelectClasses/selectclasses";
+import SelectClasses from "./components/SelectClasses/SelectClasses";
 import ContactUs from "./components/ContactUS/ContactUs";
 import AboutUs from "./components/AboutUS/AboutUs";
 
