@@ -23,7 +23,7 @@ import styles from "./WebRoutes.module.css";
 import SampleSVG from "./components/sample/SampleSVG";
 import CategorySelectionPage from "./components/SelectCategory/CategorySelectionPage";
 import SelectClasses from "./components/SelectClasses/SelectClasses";
-import ContactUs from "./components/ContactUS/ContactUs";
+import ContactUs from "./components/ContactUs/ContactUs";
 import AboutUs from "./components/AboutUS/AboutUs";
 
 import SubjectSelectionPage from "./components/AcademicSubjectSelection/SubjectSelectionPage";
@@ -54,7 +54,6 @@ function WebRoutes() {
   const { loginUserInfo, setLoginUserInfo } = useWebUserContext();
   const { studentEnrollmentData } = useEnrollmentContext();
 
-
   // console.log("WebRoutes: studentEnrollmentData from WebRoutes", studentEnrollmentData);
 
   const location = useLocation();
@@ -71,7 +70,7 @@ function WebRoutes() {
   // Define protected route paths (where navbar should NOT show)
   const protectedPaths = [
     "/dashboard",
-    
+
     "/courselist",
     "/coursegrid",
     "/coursedetails",
@@ -81,7 +80,6 @@ function WebRoutes() {
     // "/personalinfo",
     "/profilepage",
     // "/updateprofile",
-    
   ];
 
   const showNavbar =
@@ -138,7 +136,6 @@ function WebRoutes() {
               element={<ProtectedRoute element={<Congratulations />} />}
             />
 
-
             <Route
               path="/profilepage"
               element={<ProtectedRoute element={<ProfilePageRedesign />} />}
@@ -180,7 +177,13 @@ function WebRoutes() {
 
             <Route
               path="/dashboard/*"
-              element={<ProtectedRoute loginUserInfo={loginUserInfo} hasEnrollment={studentEnrollmentData} element={<Dashboard />} />}
+              element={
+                <ProtectedRoute
+                  loginUserInfo={loginUserInfo}
+                  hasEnrollment={studentEnrollmentData}
+                  element={<Dashboard />}
+                />
+              }
             />
             <Route
               path="/courselist"
@@ -204,7 +207,12 @@ function WebRoutes() {
             />
             <Route
               path="/user-course-details"
-              element={<ProtectedRoute hasEnrollment={hasEnrollment} element={<UserCourseDetails />} />}
+              element={
+                <ProtectedRoute
+                  hasEnrollment={hasEnrollment}
+                  element={<UserCourseDetails />}
+                />
+              }
             />
           </Route>
 
