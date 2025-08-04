@@ -58,7 +58,7 @@ function WebRoutes() {
   // console.log("WebRoutes: studentEnrollmentData from WebRoutes", studentEnrollmentData);
 
   const location = useLocation();
-  
+
   const Navigate = useNavigate();
 
   const storedUser = localStorage.getItem("userInfo");
