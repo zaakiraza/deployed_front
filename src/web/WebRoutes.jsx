@@ -45,6 +45,7 @@ import PrivacyPolicy from "./components/landingpage/PrivacyPolicy";
 import TermsOfUse from "./components/landingpage/TermsOfUse_new";
 import FAQ from "./components/landingpage/FAQ's";
 import PrivateRoute from "./PrivateRoutes";
+
 import ScrollToTop from "./components/ScrollToTop";
 
 // import ProtectedRoute from "../shared/ProtectedRoute";
@@ -57,6 +58,7 @@ function WebRoutes() {
   // console.log("WebRoutes: studentEnrollmentData from WebRoutes", studentEnrollmentData);
 
   const location = useLocation();
+  
   const Navigate = useNavigate();
 
   const storedUser = localStorage.getItem("userInfo");
