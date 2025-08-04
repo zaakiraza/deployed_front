@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Flex, Box } from "@chakra-ui/react";
-import DashboardNavbar from "./DashBoardNavBar";
+import DashboardNavbar from "./DashboardNavbar";
 import DashBoardSideBar from "./DashboardSidebar";
 import LessonDetails from "../All-Courses-Or-Chapters/LessonDetails";
 import UserCourseDetails from "./UserCourseDetails";
@@ -13,7 +13,8 @@ import DashboardSubjectSelection from "./DashboardSubjectSelection";
 import { useState } from "react";
 import ProfilePageRedesign from "../ProfilePage/ProfilePageRedesign";
 import CategorySelectionPage from "../SelectCategory/CategorySelectionPage";
-import SelectClasses from "../SelectClasses/selectclasses";
+import SelectClasses from "../SelectClasses/SelectClasses";
+
 import SubjectSelectionPage from "../AcademicSubjectSelection/SubjectSelectionPage";
 import SubjectDetailsPage from "../SubjectDetailsPage/subjectDetails";
 
